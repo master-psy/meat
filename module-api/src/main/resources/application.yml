@@ -1,0 +1,9 @@
+# 应用名称
+spring:
+  application:
+    name: module-api
+  profiles:
+    active: dev
+server:
+  port: 8095
+
