@@ -27,6 +27,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-boot.version>2.4.2</spring-boot.version>
+        <mybatis-generator.version>1.4.0</mybatis-generator.version>
+        <mysql.version>8.0.22</mysql.version>
+        <mybatis.version>2.1.4</mybatis.version>
     </properties>
     <!--dependencyManagement
 
@@ -56,6 +59,24 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
                 <version>${spring-boot.version}</version>
+            </dependency>
+            <!--代码生成器-->
+            <dependency>
+                <groupId>org.mybatis.generator</groupId>
+                <artifactId>mybatis-generator-core</artifactId>
+                <version>${mybatis-generator.version}</version>
+            </dependency>
+            <!--数据库驱动-->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
+            <!--mybatis-->
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
