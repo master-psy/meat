@@ -16,7 +16,8 @@ public class Generator {
     public static void main(String[] args) {
         try {
             List<String> warnings = new ArrayList<>();
-            File configFile = new File("module-mapper/src/main/resources/generatorConfig-shanyou.xml");
+            //File configFile = new File("module-mapper/src/main/resources/generatorConfig-shanyou.xml");
+            File configFile = new File("module-mapper/src/main/resources/generatorConfig-yuemenu.xml");
             ConfigurationParser cp = new ConfigurationParser(warnings);
             Configuration config = cp.parseConfiguration(configFile);
             DefaultShellCallback callback = new DefaultShellCallback(true);
