@@ -21,6 +21,7 @@
         <module>module-common</module>
         <module>module-mapper</module>
         <module>module-service</module>
+        <module>module-datasource</module>
     </modules>
 
     <properties>

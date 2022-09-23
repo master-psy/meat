@@ -1,4 +1,4 @@
-package com.api.aspect;
+package com.common.aspect;
 
 import com.alibaba.fastjson.JSONObject;
 import com.common.base.BaseRespDto;

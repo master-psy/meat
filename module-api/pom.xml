@@ -28,10 +28,10 @@
             <artifactId>module-common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
-        <!--导入mapper模块-->
+        <!--多数据源-->
         <dependency>
-            <groupId>com.mapper</groupId>
-            <artifactId>module-mapper</artifactId>
+            <groupId>com.datasource</groupId>
+            <artifactId>module-datasource</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <!--提供了嵌入的 Servlet 容器以及 SpringMVC 的依赖，并为 Spring MVC 提供了大量自动配置-->

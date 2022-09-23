@@ -1,7 +1,7 @@
-package com.mapper.mapper;
+package com.mapper.shanyou.mapper;
 
-import com.mapper.entity.TbUser;
-import com.mapper.entity.TbUserExample;
+import com.mapper.shanyou.entity.TbUser;
+import com.mapper.shanyou.entity.TbUserExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 

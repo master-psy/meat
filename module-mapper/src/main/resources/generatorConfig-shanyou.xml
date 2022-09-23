@@ -24,7 +24,7 @@
         </javaTypeResolver>
 
         <!-- 实体类的包名和存放路径 -->
-        <javaModelGenerator targetPackage="com.mapper.entity" targetProject="module-mapper/src/main/java">
+        <javaModelGenerator targetPackage="com.mapper.shanyou.entity" targetProject="module-mapper/src/main/java">
             <!-- enableSubPackages:是否让schema作为包的后缀 -->
             <property name="enableSubPackages" value="false"/>
             <!-- 清理数据库返回的值前后的空格 -->
@@ -32,12 +32,12 @@
         </javaModelGenerator>
 
         <!-- 生成映射文件*.xml的位置-->
-        <sqlMapGenerator targetPackage="mapper" targetProject="module-mapper/src/main/resources">
+        <sqlMapGenerator targetPackage="mapper.shanyou" targetProject="module-mapper/src/main/resources">
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
 
         <!-- 生成DAO的包名和位置 -->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.mapper.mapper"
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.mapper.shanyou.mapper"
                              targetProject="module-mapper/src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>

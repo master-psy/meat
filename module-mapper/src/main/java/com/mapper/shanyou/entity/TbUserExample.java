@@ -1,4 +1,4 @@
-package com.mapper.entity;
+package com.mapper.shanyou.entity;
 
 import java.util.ArrayList;
 import java.util.Date;

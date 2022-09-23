@@ -1,11 +1,12 @@
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://121.37.101.18:3306/shanyou?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
-    username: root
-    password: shanyou
+    shanyou:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://121.37.101.18:3306/shanyou?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
+      username: root
+      password: shanyou
 mybatis:
-#  扫描xml文件
+  #  扫描xml文件
   mapper-locations: classpath:mapper/*.xml
 logging:
   level:

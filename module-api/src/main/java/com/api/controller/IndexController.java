@@ -1,7 +1,7 @@
 package com.api.controller;
 
-import com.mapper.entity.TbUser;
-import com.mapper.mapper.TbUserMapper;
+import com.mapper.shanyou.entity.TbUser;
+import com.mapper.shanyou.mapper.TbUserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

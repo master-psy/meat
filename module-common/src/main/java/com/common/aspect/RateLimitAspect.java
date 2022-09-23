@@ -1,4 +1,4 @@
-package com.api.aspect;
+package com.common.aspect;
 
 import com.common.annotation.RateLimit;
 import com.common.enumeration.ApiCodeEnum;
