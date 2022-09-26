@@ -1,14 +1,14 @@
 package com.api.controller;
 
+import com.api.dto.IndexDto;
+import com.api.service.IndexService;
 import com.common.base.BaseRespDto;
-import com.mapper.shanyou.entity.TbUser;
-import com.mapper.shanyou.mapper.TbUserMapper;
-import com.mapper.yuemenu.entity.TbUsers;
-import com.mapper.yuemenu.mapper.TbUsersMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * @Desc
@@ -17,16 +17,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class IndexController {
     @Autowired
-    private TbUserMapper tbUserMapper;
-    @Autowired
-    private TbUsersMapper tbUsersMapper;
+    private IndexService indexService;
 
     @RequestMapping("/")
-    public BaseRespDto index() {
-        TbUser tbUser = tbUserMapper.selectByPrimaryKey(5);
-        log.info("shanyou username:{}", tbUser.getUsername());
-        TbUsers tbUsers = tbUsersMapper.selectByPrimaryKey(3);
-        log.info("yuemenu username:{}", tbUsers.getUsername());
-        return new BaseRespDto(tbUser.getUsername() + " & " + tbUsers.getUsername());
+    public BaseRespDto index(IndexDto dto) {
+        return indexService.index(dto);
+    }
+
+    @RequestMapping("/export")
+    public void exportUser(HttpServletResponse response) {
+        indexService.exportUser(response);
     }
 }
