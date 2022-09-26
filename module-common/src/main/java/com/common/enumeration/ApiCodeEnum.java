@@ -20,7 +20,9 @@ public enum ApiCodeEnum {
     CODE_HAS_EXPIRED(451, "code has expired", "验证码不正确或已过期"),
     USERNAME_OR_PASSWORD_ERROR(451, "username or password error", "用户名或密码错误"),
     //文件
-    FILE_NOT_FOUND(301,"","文件未找到"),
+    FILE_NOT_FOUND(301, "file not found", "文件未找到"),
+    //excel
+    FILE_EXPORT_FAILED(700, "file export failed", "文件导出失败"),
     ;
     private final int code;
     private final String msg;

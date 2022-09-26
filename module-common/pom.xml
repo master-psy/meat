@@ -29,6 +29,7 @@
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <!--    web  提供@controller @requestMapping HttpServletRequest等-->
+        <!--提供了嵌入的 Servlet 容器以及 SpringMVC 的依赖，并为 Spring MVC 提供了大量自动配置-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>

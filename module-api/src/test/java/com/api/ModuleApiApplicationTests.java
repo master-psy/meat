@@ -8,6 +8,7 @@ class ModuleApiApplicationTests {
 
     @Test
     void contextLoads() {
+        System.out.println("单元测试");
     }
 
 }

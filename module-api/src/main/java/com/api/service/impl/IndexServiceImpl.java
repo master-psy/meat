@@ -3,6 +3,8 @@ package com.api.service.impl;
 import com.api.dto.IndexDto;
 import com.api.service.IndexService;
 import com.common.base.BaseRespDto;
+import com.common.enumeration.ApiCodeEnum;
+import com.common.exception.BizException;
 import com.common.util.ExcelUtils;
 import com.mapper.shanyou.entity.TbUser;
 import com.mapper.shanyou.entity.TbUserExample;
@@ -31,9 +33,7 @@ public class IndexServiceImpl implements IndexService {
     @Override
     public BaseRespDto index(IndexDto dto) {
         TbUser tbUser = tbUserMapper.selectByPrimaryKey(5);
-        log.info("shanyou username:{}", tbUser.getUsername());
         TbUsers tbUsers = tbUsersMapper.selectByPrimaryKey(3);
-        log.info("yuemenu username:{}", tbUsers.getUsername());
         return new BaseRespDto(tbUser.getUsername() + " & " + tbUsers.getUsername());
     }
 
@@ -45,7 +45,7 @@ public class IndexServiceImpl implements IndexService {
         try {
             ExcelUtils.exportExcelToTarget(response, "全部用户", tbUsers, TbUserExcel.class);
         } catch (Exception e) {
-            log.info("导出失败");
+            throw new BizException(ApiCodeEnum.FILE_EXPORT_FAILED);
         }
     }
 }
