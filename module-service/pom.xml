@@ -22,6 +22,7 @@
     </properties>
 
     <dependencies>
+        <!--导入common模块-->
         <dependency>
             <groupId>com.common</groupId>
             <artifactId>module-common</artifactId>

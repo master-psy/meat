@@ -22,6 +22,12 @@
     </properties>
 
     <dependencies>
+        <!--导入数据源-->
+        <dependency>
+            <groupId>com.datasource</groupId>
+            <artifactId>module-datasource</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
         <!--    web  提供@controller @requestMapping HttpServletRequest等-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

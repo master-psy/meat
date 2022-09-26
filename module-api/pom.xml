@@ -22,16 +22,10 @@
     </properties>
 
     <dependencies>
-        <!--导入common模块-->
+        <!--导入service模块-->
         <dependency>
-            <groupId>com.common</groupId>
-            <artifactId>module-common</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <!--多数据源-->
-        <dependency>
-            <groupId>com.datasource</groupId>
-            <artifactId>module-datasource</artifactId>
+            <groupId>com.service</groupId>
+            <artifactId>module-service</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <!--提供了嵌入的 Servlet 容器以及 SpringMVC 的依赖，并为 Spring MVC 提供了大量自动配置-->

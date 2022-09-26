@@ -1,5 +1,6 @@
 package com.api.controller;
 
+import com.common.base.BaseRespDto;
 import com.mapper.shanyou.entity.TbUser;
 import com.mapper.shanyou.mapper.TbUserMapper;
 import com.mapper.yuemenu.entity.TbUsers;
@@ -21,11 +22,11 @@ public class IndexController {
     private TbUsersMapper tbUsersMapper;
 
     @RequestMapping("/")
-    public String index() {
+    public BaseRespDto index() {
         TbUser tbUser = tbUserMapper.selectByPrimaryKey(5);
         log.info("shanyou username:{}", tbUser.getUsername());
         TbUsers tbUsers = tbUsersMapper.selectByPrimaryKey(3);
         log.info("yuemenu username:{}", tbUsers.getUsername());
-        return "hello springboot module";
+        return new BaseRespDto(tbUser.getUsername() + " & " + tbUsers.getUsername());
     }
 }
