@@ -22,6 +22,7 @@
         <module>module-mapper</module>
         <module>module-service</module>
         <module>module-datasource</module>
+        <module>module-redis</module>
     </modules>
 
     <properties>

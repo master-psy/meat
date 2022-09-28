@@ -28,6 +28,12 @@
             <artifactId>module-datasource</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+        <!--redis-->
+        <dependency>
+            <groupId>com.redis</groupId>
+            <artifactId>module-redis</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
         <!--    web  提供@controller @requestMapping HttpServletRequest等-->
         <!--提供了嵌入的 Servlet 容器以及 SpringMVC 的依赖，并为 Spring MVC 提供了大量自动配置-->
         <dependency>
