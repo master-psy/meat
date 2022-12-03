@@ -22,6 +22,12 @@
     </properties>
 
     <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
         <!--导入service模块-->
         <dependency>
             <groupId>com.service</groupId>
