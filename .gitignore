@@ -3,4 +3,4 @@
 !**/src/test/**
 .idea
 **/logs/
-.vscode
+.vscode/**
