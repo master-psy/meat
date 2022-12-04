@@ -42,6 +42,7 @@
         <obs.version>[3.21.11,)</obs.version>
         <commons.lang.version>2.6</commons.lang.version>
         <springfox>3.0.0</springfox>
+        <jsoup>1.11.3</jsoup>
     </properties>
     <!--dependencyManagement
 
@@ -158,6 +159,12 @@
                 <groupId>io.springfox</groupId>
                 <artifactId>springfox-boot-starter</artifactId>
                 <version>${springfox}</version>
+            </dependency>
+            <!--解析网页-->
+            <dependency>
+                <groupId>org.jsoup</groupId>
+                <artifactId>jsoup</artifactId>
+                <version>${jsoup}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
