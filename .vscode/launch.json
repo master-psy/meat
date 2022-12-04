@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch GithubRepoPageProcessor",
+            "request": "launch",
+            "mainClass": "com.service.reptile.GithubRepoPageProcessor",
+            "projectName": "module-service"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ModuleApiApplication<module-api>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.api.ModuleApiApplication",
+            "projectName": "module-api",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
