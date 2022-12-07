@@ -21,7 +21,7 @@ public class CustomThreadPoolExecutor {
      * threadFactory – 执行器创建新线程时使用的工厂
      * handler – 由于达到线程边界和队列容量而阻塞执行时使用的处理程序
      */
-    private static final ThreadPoolExecutor pool = new ThreadPoolExecutor(2, 5, 30, TimeUnit.MINUTES, new LinkedBlockingQueue<>(2048), new CustomFactory(), new CustomRejectedExecutionHandler());
+    private static final ThreadPoolExecutor pool = new ThreadPoolExecutor(5, 5, 30, TimeUnit.MINUTES, new LinkedBlockingQueue<>(2048), new CustomFactory(), new CustomRejectedExecutionHandler());
 
     /**
      * 私有单例模式,通过getInstance实例化
