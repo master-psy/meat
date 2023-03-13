@@ -1,0 +1,37 @@
+spring:
+  datasource:
+    shanyou:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://121.37.101.18:3306/shanyou?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
+      username: root
+      password: shanyou
+    yuemenu:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://121.37.101.18:3306/yuemenu?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
+      username: root
+      password: shanyou
+  redis:
+    # 地址
+    host: 121.37.101.18
+    port: 6379
+    database: 0
+    password:
+    # 连接超时时间
+    timeout: 10s
+    lettuce:
+      pool:
+        # 连接池中的最小空闲连接
+        min-idle: 2
+        # 连接池中的最大空闲连接
+        max-idle: 8
+        # 连接池的最大数据库连接数
+        max-active: 8
+        # #连接池最大阻塞等待时间（使用负值表示没有限制）
+        max-wait: -1ms
+mybatis:
+  #  扫描xml文件
+  mapper-locations: classpath:mapper/*.xml
+logging:
+  level:
+    com.mapper.mapper: debug
+  config: classpath:logback-dev-spring.xml
